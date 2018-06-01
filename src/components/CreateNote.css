@@ -1,0 +1,61 @@
+.saveButton {
+    width: 25% ;
+    border-radius: 0;
+    background-color: #dcd0c0;
+    border: none;
+    color: #232323;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 7px 13px 10px;
+    cursor: pointer;
+    border: 1px solid gray;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.createNoteContainer {
+    width: 40%;
+    margin: 100px 500px;
+}
+
+.headerNotes {
+    margin-top: 20px;
+    margin-left: 10px;
+    justify-content: flex-start;
+    font-size: 25px;
+    padding-top: 5px;
+    font-weight: bolder;
+    color: #232323be;
+    text-shadow: 1px 1px #c0b283;
+    font-family: 'Merriweather', serif;
+}
+
+.inputFields {
+    margin-left: 12px;
+}
+
+.title {
+    width: 55%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    box-shadow: inset .5px 1px lightgrey;
+    font-size: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.content {
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    font-family: Arial;
+    resize: none;
+    border: 1px solid gray;
+    border-radius: 2px;
+    box-shadow: inset .5px 1px lightgrey;
+    font-size: 10px;
+}
+

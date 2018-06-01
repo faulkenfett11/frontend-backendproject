@@ -1,0 +1,145 @@
+.header {
+	width: 20%;
+	color: #c0b283;
+	margin: 0 auto;
+	font-family: 'Pacifico', cursive;
+	display: flex;
+	justify-content: center;
+	background: #f4f4f4;
+	margin-top: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-style: italic;
+	text-shadow: 1px 1px #232323;
+	font-size: 40px;
+}
+
+.fadeOut {
+	background: #f4f4f4;
+}
+
+.header {
+	position: relative;
+	animation: moveleft 250s 1;
+  animation-direction: normal;
+}
+
+@keyframes moveleft {
+	0% { left: 0px; }
+	5% { left: 600px; }
+	10% { left: 600px; }
+	20% { left: 600px; }
+	30% { left: 600px; }
+	40% { left: 600px; }
+	50% { left: 600px; }
+	60% { left: 600px; }
+	70% { left: 600px; }
+	80% { left: 600px; }
+	90% { left: 600px; }
+  100% { left: 600px; }
+}
+
+.headerNavBar {
+  display: flex;
+	justify-content: center;
+	background: #f4f4f4;
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.h3 {
+  color: #c0b283;
+  transition: color 0.3s ease;
+}
+
+.h3:hover {
+  color: #373737;
+}
+
+.NavBarContainer {
+  display: block;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.NavBarContainer input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 17px;
+  left: 5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+.NavBarContainer span {
+  display: block;
+  top: -50px;
+  left: 20px;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #c0b283;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.NavBarContainer span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.NavBarContainer span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.NavBarContainer input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+.NavBarContainer input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.NavBarContainer input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu {
+	position: absolute;
+  margin: -97px 0 0 -125px;
+  padding-left: 200px;
+  background: transparent;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.menu h3 {
+	display: inline-flex;
+  padding: 10px 0;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px 13px 10px;
+	cursor: pointer;
+	background: transparent;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.NavBarContainer input:checked ~ ul {
+  transform: none;
+}

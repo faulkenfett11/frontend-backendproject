@@ -1,0 +1,107 @@
+.noteView {
+    width: 45%;
+    margin: 70px 500px;
+}
+
+.oneTitle {
+    margin-top: 20px;
+    margin-left: 10px;
+    justify-content: flex-start;
+    font-size: 25px;
+    padding-top: 5px;
+    font-weight: bolder;
+    color: #232323be;
+    text-shadow: 1px 1px #c0b283;
+    font-family: 'Merriweather', serif;
+}
+
+.oneContent {
+    display: inline-block;
+    justify-content: flex-start;
+    margin-top: 22px;
+    line-height: 25px;
+    margin-right: 25px;
+    color: #232323;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.deleteButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #232323be;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    outline: none;
+}
+
+.buttons {
+    margin-right: 20px;
+    text-align: end;
+}
+
+.ModalContainer{
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    z-index: 3;
+    background: transparent;
+  }
+
+  .ModalContainer__ContentContainer {
+    background: #f4f4f4;
+    padding: 25px 50px;
+    border: 1px solid #232323be;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sure {
+    color: #c0b283;
+    text-shadow: 1px 1px #232323;
+    font-family: 'Merriweather', serif;
+  } 
+
+  .ModalContainer__ButtonsContainer {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .ModalContainer__Button {
+    width: 45% ;
+    border-radius: 0;
+    background-color: #dcd0c0;
+    border: none;
+    color: #232323;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 7px 13px 10px;
+    cursor: pointer;
+    border: 1px solid gray;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+  }
+
+  .ModalContainer__WrappedButton{
+    width: 100%;
+  }
+
+  .red{
+    background-color: #dcd0c0;
+  }
+
+  .red:hover{
+    background-color: rgb(255,0,0);
+  }
+
+  .link {
+    width: 45%;
+  }
